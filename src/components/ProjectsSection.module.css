@@ -69,7 +69,6 @@
 }
 
 .projectCard a {
-  display: inline-block;
   color: #228be6;
   text-decoration: none;
   font-weight: 500;
@@ -100,4 +99,4 @@
   .projectCard {
     padding: 1.5rem;
   }
-} 
+}

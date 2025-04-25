@@ -4,10 +4,9 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
+  background-color: #1a1a1a;
   pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-  background-color: #0a0a2a; /* Dark blue background */
 }
 
 .star {
@@ -37,6 +36,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(10, 10, 42, 0.1), rgba(10, 10, 42, 0.3));
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.1), rgba(26, 26, 26, 0.3));
   z-index: 1;
 } 

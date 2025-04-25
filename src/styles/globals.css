@@ -1,0 +1,192 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Define Bodoni font */
+@font-face {
+  font-family: 'Bodoni';
+  src: url('/fonts/Bodoni.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url('/fonts/Bodoni-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+:root {
+  /* Color palette */
+  --color-charcoal: #333333;
+  --color-pastel-pink: #f8d7da;
+  --color-dark-gray: #555555;
+  --color-light-gray: #fafafa;
+  --color-white: #ffffff;
+  
+  /* Typography */
+  --font-bodoni: 'Bodoni', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-helvetica: 'Helvetica Neue', Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  --transition-slow: 0.8s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-helvetica);
+  color: var(--color-charcoal);
+  background-color: var(--color-light-gray);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bodoni);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-charcoal);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-pastel-pink);
+}
+
+button {
+  font-family: var(--font-montserrat);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+button:hover {
+  transform: translateX(10px);
+}
+
+.section {
+  min-height: 100vh;
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-family: var(--font-bodoni);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+}
+
+.section-subtitle {
+  font-family: var(--font-montserrat);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  display: inline-block;
+}
+
+.section-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-charcoal);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .section {
+    padding: var(--spacing-sm);
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+} 

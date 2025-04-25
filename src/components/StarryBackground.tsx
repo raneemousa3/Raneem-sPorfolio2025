@@ -1,63 +1,71 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './StarryBackground.module.css';
 
 const StarryBackground: React.FC = () => {
-  const [stars, setStars] = useState<Array<{ id: number; x: number; y: number; size: number; opacity: number }>>([]);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    // Generate random stars
-    const generateStars = () => {
-      const newStars = [];
-      const numStars = 200; // Increased number of stars
-      
-      for (let i = 0; i < numStars; i++) {
-        newStars.push({
-          id: i,
-          x: Math.random() * 100, // Random x position (percentage)
-          y: Math.random() * 100, // Random y position (percentage)
-          size: Math.random() * 4 + 2, // Larger stars (2-6px)
-          opacity: Math.random() * 0.8 + 0.2 // Random opacity between 0.2-1
-        });
-      }
-      
-      setStars(newStars);
-      console.log('Stars generated:', newStars.length);
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Set canvas size to window size
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     };
 
-    generateStars();
-    
-    // Optional: Add twinkling effect
-    const twinkleInterval = setInterval(() => {
-      setStars(prevStars => 
-        prevStars.map(star => ({
-          ...star,
-          opacity: Math.random() * 0.8 + 0.2
-        }))
-      );
-    }, 3000); // Twinkle every 3 seconds
-    
-    return () => clearInterval(twinkleInterval);
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Star properties
+    const stars: { x: number; y: number; size: number; speed: number }[] = [];
+    const numStars = 200;
+
+    // Create stars
+    for (let i = 0; i < numStars; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 2,
+        speed: Math.random() * 0.5 + 0.1
+      });
+    }
+
+    // Animation loop
+    const animate = () => {
+      ctx.fillStyle = 'rgba(13, 17, 23, 0.1)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      stars.forEach(star => {
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Move star
+        star.y += star.speed;
+        if (star.y > canvas.height) {
+          star.y = 0;
+          star.x = Math.random() * canvas.width;
+        }
+      });
+
+      requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+    };
   }, []);
 
-  return (
-    <div className={styles.starryBackground}>
-      {stars.map(star => (
-        <div 
-          key={star.id}
-          className={styles.star}
-          style={{
-            left: `${star.x}%`,
-            top: `${star.y}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            opacity: star.opacity
-          }}
-        />
-      ))}
-    </div>
-  );
+  return <canvas ref={canvasRef} className={styles.starryBackground} />;
 };
 
 export default StarryBackground; 

@@ -1,139 +1,220 @@
 .hero {
-  min-height: 100vh;
+  position: relative;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  position: relative;
+  padding: 0 5%;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-  color: white;
 }
 
 .heroContent {
+  flex: 1;
   max-width: 600px;
-  z-index: 2;
+  z-index: 1;
+  color: white;
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #ffffff, #a8d5ff);
+  background: linear-gradient(45deg, #40c057, #fcc419);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .role {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #a8d5ff;
+  font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #e9ecef;
 }
 
 .description {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ced4da;
 }
 
 .cta {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .primaryButton {
   display: inline-block;
-  background: #228be6;
+  background-color: #40c057;
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   font-weight: 500;
-  transition: all 0.3s ease;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
 .primaryButton:hover {
-  background: #1c7ed6;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #37b24d;
 }
 
 .secondaryButton {
   display: inline-block;
-  background: transparent;
+  background-color: transparent;
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease;
   text-decoration: none;
+  transition: all 0.2s;
+  border: 2px solid #40c057;
+  cursor: pointer;
 }
 
 .secondaryButton:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
+  background-color: rgba(64, 192, 87, 0.1);
 }
 
 .imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.cutoutWrapper {
   position: relative;
-  z-index: 2;
+  width: 650px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
 .profileImage {
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 3px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+  object-fit: contain;
+  /* Crisp white outline around the silhouette */
+  filter: drop-shadow(0 0 0.4rem #fff) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.1));
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform: translateZ(0) rotateY(0);
+  will-change: transform;
 }
 
-.profileImage:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+.cutoutWrapper:hover .profileImage {
+  transform: translateZ(50px) rotateY(5deg);
+  filter: drop-shadow(0 0 0.8rem #fff) drop-shadow(0 0 2rem rgba(0, 0, 0, 0.2));
+}
+
+/* Add a subtle floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateZ(0);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(20px);
+  }
+  100% {
+    transform: translateY(0px) translateZ(0);
+  }
+}
+
+.cutoutWrapper {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Add a glowing effect on hover */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.cutoutWrapper:hover {
+  animation: glow 2s ease-in-out infinite;
 }
 
 .uploadOverlay {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(0, 0, 0, 0.7);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s;
 }
 
-.imageContainer:hover .uploadOverlay {
+.cutoutWrapper:hover .uploadOverlay {
   opacity: 1;
 }
 
-.uploadOverlay button {
-  background: transparent;
+.fileInput {
+  display: none;
+}
+
+.uploadLabel {
   color: white;
-  border: none;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.uploadLabel:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.warning {
+  color: #fcc419;
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .role {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
   }
 
   .cta {
@@ -142,5 +223,38 @@
 
   .imageContainer {
     margin-top: 2rem;
+  }
+
+  .cutoutWrapper {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .primaryButton, .secondaryButton {
+    width: 100%;
+    text-align: center;
   }
 } 
