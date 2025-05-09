@@ -65,7 +65,7 @@ const EditorialCoverHero = ({
           <div className={styles.topRight}></div>
           <div className={styles.midLeft}>AI Enthusiast</div>
           <div className={styles.bottomRight}>
-            Hey! I'm Raneem, a rising junior in computer engineering at Columbia University with degrees in Math and Computer Science. I build AI-powered tools as an AI software engineer intern. I co-founded Engineering Liaison (treasurer) and lead the Math & CS Club at Simmons. I also co-directed SharkHack 2024 and led SharkHack 2025. I love AI, math, and fashion. Right now I'm solo building virtual fitting rooms and the Route N Roam app with my team. I'm always up for new ideas and collaborations so reach out!
+            Hey! I'm Raneem, a rising junior in computer engineering at Washington University in St. Louis with degrees in Math and Computer Science. I build AI-powered tools as an AI software engineer intern. I co-founded Engineering Liaison (treasurer) and lead the Math & CS Club at Simmons. I also co-directed SharkHack 2024 and led SharkHack 2025. I love AI, math, and fashion. Right now I'm solo building virtual fitting rooms and the Route N Roam app with my team. I'm always up for new ideas and collaborations so reach out!
           </div>
         </div>
         
