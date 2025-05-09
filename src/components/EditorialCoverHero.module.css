@@ -284,17 +284,16 @@
     margin: 0;
     padding: 1.5rem;
     border: none;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas:
-      "masthead"
-      "portrait"
-      "topRight"
-      "midLeft"
-      "bottomRight"
-      "links";
-      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
+  }
+  
+  .masthead {
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
   
   .name {
@@ -303,14 +302,46 @@
   
   .portfolio {
     font-size: 1.2rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .portraitContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .coverLines {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   
   .topRight, .midLeft, .bottomRight {
-    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .bottomRight {
+    margin-top: 1rem;
+    word-spacing: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    padding: 0 1rem;
   }
 
   .links {
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    margin-top: 1rem;
   }
 } 

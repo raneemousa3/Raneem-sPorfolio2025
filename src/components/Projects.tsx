@@ -33,7 +33,7 @@ const Projects = () => {
       description: 'An AI-powered virtual fitting room that allows users to try on clothes virtually. Built with computer vision and machine learning to provide a realistic and interactive shopping experience. Features include real-time body measurements, clothing visualization, and personalized recommendations.',
       image: '/images/VFR.jpeg',
       tags: ['AI', 'Computer Vision', 'React', 'Python', 'TensorFlow', '3D Modeling'],
-      link: '#'
+      link: 'https://github.com/raneemousa3/Virtual-Fitting-room'
     },
     {
       id: 2,
@@ -63,15 +63,15 @@ const Projects = () => {
       id: 5,
       title: 'Spotify Top Songs Analysis',
       description: 'A Streamlit-powered web app that taps into the Spotify API (via Spotipy) to pull in your most-played tracks and surface their audio features—danceability, energy, valence, and more—through interactive charts. Analyze your listening habits at a glance and get AI-driven song and artist recommendations tailored to your personal taste.',
-      image: '/images/spotifyPersonalRec.png',
+      image: '/images/SpotifyPersonalRec.png',
       tags: ['Python', 'Spotipy', 'Streamlit', 'Pandas', 'API Integration'],
       link: 'https://github.com/raneemousa3/spotify-top-songs-analysis'
     },
     {
       id: 6,
       title: 'NdLinear vs nn.Linear Performance Comparison',
-      description: 'Implemented a “NdLinear” layer to preserve multi-D input structure (text & video) and compared it with a conventional flatten+`nn.Linear` on AG News (text) and UCF-101 (video). Across both tasks—even when integrated with a frozen ResNet-18 backbone—NdLinear achieved lower validation loss and higher accuracy without adding parameters or slowing down training.',
-      image: '/images/graphND.jpEg',
+      description: 'Implemented a "NdLinear" layer to preserve multi-D input structure (text & video) and compared it with a conventional flatten+`nn.Linear` on AG News (text) and UCF-101 (video). Across both tasks—even when integrated with a frozen ResNet-18 backbone—NdLinear achieved lower validation loss and higher accuracy without adding parameters or slowing down training.',
+      image: '/images/graphND.jpeg',
       tags: ['PyTorch',  'NDLinear', 'NLP', 'Computer Vision', 'Resnet18'],
       link: 'https://github.com/raneemousa3/ndlinear-vs-nnlinear'
     },
