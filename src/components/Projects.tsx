@@ -35,8 +35,20 @@ const Projects = () => {
       tags: ['AI', 'Computer Vision', 'React', 'Python', 'TensorFlow', '3D Modeling'],
       link: 'https://github.com/raneemousa3/Virtual-Fitting-room'
     },
+
     {
+
       id: 2,
+      title: 'Yoink!',
+      description:  'A cross-platform rental marketplace for university students to share textbooks, electronics, and everyday items within their campus. Built with a production-grade Flutter architecture, Yoink supports secure payments, real-time booking, gamification, and sustainability impact tracking across users and campuses.',
+      image: '/images/Yoink.jpg',
+      tags: ['Firebase', 'Flutter','Stripe Payments', 'Gamification', 'Sustainability'],
+      link: 'https://yoink.green/',
+    },
+
+
+    {
+      id: 3,
       title: 'Route N Roam',
       description: 'A Java-powered, location-based recommendation engine that blends Tinder-style swiping with Yelp review data and a Pinterest-style feed—letting users discover local restaurants, activities, and self-care spots, save favorites to a wishlist, schedule visits, read reviews, and find and connect with others planning to go to the same place at the same time—all within one intuitive interface.',
       image: '/images/C.png',
@@ -44,7 +56,7 @@ const Projects = () => {
       link: 'https://github.com/pefflerm/CS-335-Project'
     },
     {
-      id: 3,
+      id: 4,
       title: 'ProfBotix: Math and Programming Tutor Chatbot',
       description: 'Flask web app for math and CS tutoring with step-by-step solutions, practice quizzes, OCR-based problem parsing, and OpenAI-powered contextual explanations.',
       image: '/images/STEMTutorBot.jpeg',
@@ -52,7 +64,7 @@ const Projects = () => {
       link: 'https://github.com/raneemousa3/TutorBOTProfbotix'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Online Dresses Shopping Cart & Wishlist',
       description: 'A C++ console-based application simulating an online fashion boutique. Users can add dresses, skirts, tops, and accessories to a shopping cart or wishlist, adjust quantities, and view real-time total cost calculations. The implementation showcases robust object-oriented design—utilizing inheritance and polymorphism—and includes a custom linked-list for dynamic item management.',
       image: '/images/MM.png',
@@ -60,7 +72,7 @@ const Projects = () => {
       link: 'https://github.com/raneemousa3/Online-Dresses-shop-Shopping-Cart-and-Wishlist'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Spotify Top Songs Analysis',
       description: 'A Streamlit-powered web app that taps into the Spotify API (via Spotipy) to pull in your most-played tracks and surface their audio features—danceability, energy, valence, and more—through interactive charts. Analyze your listening habits at a glance and get AI-driven song and artist recommendations tailored to your personal taste.',
       image: '/images/SpotifyPersonalRec.png',
@@ -68,7 +80,7 @@ const Projects = () => {
       link: 'https://github.com/raneemousa3/spotify-top-songs-analysis'
     },
     {
-      id: 6,
+      id: 7,
       title: 'NdLinear vs nn.Linear Performance Comparison',
       description: 'Implemented a "NdLinear" layer to preserve multi-D input structure (text & video) and compared it with a conventional flatten+`nn.Linear` on AG News (text) and UCF-101 (video). Across both tasks—even when integrated with a frozen ResNet-18 backbone—NdLinear achieved lower validation loss and higher accuracy without adding parameters or slowing down training.',
       image: '/images/graphND.jpeg',

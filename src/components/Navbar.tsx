@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 
@@ -9,7 +7,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projects', 'about', 'contact'];
+      const sections = ['home', 'projects', 'contact'];
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -62,15 +60,6 @@ const Navbar: React.FC = () => {
               onClick={() => scrollToSection('projects')}
             >
               Projects
-            </a>
-          </li>
-          <li>
-            <a 
-              href="#about" 
-              className={`${styles.navLink} ${activeSection === 'about' ? styles.active : ''}`} 
-              onClick={() => scrollToSection('about')}
-            >
-              About
             </a>
           </li>
           <li>

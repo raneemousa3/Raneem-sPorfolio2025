@@ -45,7 +45,7 @@ const EditorialCoverHero = ({
         <div className={styles.masthead}>
           <div className={styles.issueLine}>commit #1024</div>
           <h1 className={styles.name}>RANEEM MOUSA</h1>
-          <h2 className={styles.portfolio}>MATH AND COMPUTER ENGINEERING STUDENT</h2>
+          <h2 className={styles.portfolio}>COMPUTER ENGINEERING AND MATHEMATICS STUDENT</h2>
         </div>
 
         <div className={styles.portraitContainer}>
@@ -65,7 +65,11 @@ const EditorialCoverHero = ({
           <div className={styles.topRight}></div>
           <div className={styles.midLeft}>AI Enthusiast</div>
           <div className={styles.bottomRight}>
-            Hey! I'm Raneem, a rising junior in computer engineering at Washington University in St. Louis with degrees in Math and Computer Science. I build AI-powered tools as an AI software engineer intern. I co-founded Engineering Liaison (treasurer) and lead the Math & CS Club at Simmons. I also co-directed SharkHack 2024 and led SharkHack 2025. I love AI, math, and fashion. Right now I'm solo building virtual fitting rooms and the Route N Roam app with my team. I'm always up for new ideas and collaborations so reach out!
+          Hey! I’m Raneem, a junior in computer engineering at Washington University in St. Louis with a previous degree in math. I build AI-powered tools as an AI software engineer intern and co-founded Yoink!, an AI-powered rental platform for college students.
+
+I work as a software developer with WashU Robotics and WashU Satellites, focusing on autonomy, embedded systems, and real-world engineering challenges. I’m especially interested in FashionTech at the intersection of AI, computer vision, virtual fitting rooms, sustainability, and product-driven fashion technology.
+
+I’m always excited about new ideas and collaborations, so feel free to reach out.
           </div>
         </div>
         

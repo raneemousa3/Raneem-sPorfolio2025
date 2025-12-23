@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './CutoutHero.module.css';
 import Image from 'next/image';

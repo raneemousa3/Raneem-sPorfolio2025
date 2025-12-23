@@ -14,7 +14,16 @@ declare module 'components' {
     // Add any specific props for Projects component
   }
 
-  export interface EditorialHeroProps extends BaseProps {
-    // Add any specific props for EditorialHero component
+  export interface EditorialCoverHeroProps extends BaseProps {
+    imageUrl?: string;
+    isVisible?: boolean;
+    isProcessing?: boolean;
+    handleImageUpload?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    fileInputRef?: React.RefObject<HTMLInputElement>;
+    error?: string;
+  }
+
+  export interface ContactProps extends BaseProps {
+    // Add any specific props for Contact component
   }
 } 
