@@ -135,6 +135,7 @@ const Projects = () => {
                   width={400}
                   height={300}
                   className={styles.projectImage}
+                  unoptimized
                 />
                 <div className={styles.projectOverlay}>
                   <a href={project.link} className={styles.projectLink}>
