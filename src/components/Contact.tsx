@@ -52,7 +52,7 @@ const Contact = () => {
             
             <div className={styles.contactItem}>
               <h3 className={styles.contactLabel}>Location</h3>
-              <p className={styles.contactValue}>Boston, MA</p>
+              <p className={styles.contactValue}>Saint Louis, MO</p>
             </div>
             
             <div className={styles.contactItem}>
