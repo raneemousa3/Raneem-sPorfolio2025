@@ -11,7 +11,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Raneem Mousa | Portfolio</title>
-        <meta name="description" content="Portfolio of Raneem Mousa, Math and Computer Engineering Student" />
+        <meta name="description" content="Raneem Mousa builds applied AI tools and robotics software, with interests in safe autonomous systems, embodied AI, and fashion technology." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

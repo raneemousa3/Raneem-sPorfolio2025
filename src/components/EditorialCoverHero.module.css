@@ -144,7 +144,7 @@
   /* center this cell's contents: */
   justify-self: center;   /* centers the cell horizontally */
   align-self: center;     /* centers the cell vertically in its row */
-      
+
   margin-top: 0.5rem;
   word-spacing: 0.5rem;
   letter-spacing: 0.05rem;
@@ -158,8 +158,8 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.8s ease-out 0.8s forwards;
-  align-self: end;    
-  margin-bottom: -7.6rem; 
+  align-self: end;
+  margin-bottom: -7.6rem;
 }
 
 .portraitWrapper {
@@ -289,29 +289,29 @@
     align-items: center;
     gap: 1.5rem;
   }
-  
+
   .masthead {
     width: 100%;
     text-align: center;
     align-items: center;
   }
-  
+
   .name {
     font-size: 3rem;
   }
-  
+
   .portfolio {
     font-size: 1.2rem;
     max-width: 100%;
     text-align: center;
   }
-  
+
   .portraitContainer {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   .coverLines {
     width: 100%;
     display: flex;
@@ -319,7 +319,7 @@
     align-items: center;
     gap: 1rem;
   }
-  
+
   .topRight, .midLeft, .bottomRight {
     width: 100%;
     max-width: 600px;
@@ -344,4 +344,5 @@
     gap: 1rem;
     margin-top: 1rem;
   }
-} 
+}
+.links { flex-wrap: wrap; }
