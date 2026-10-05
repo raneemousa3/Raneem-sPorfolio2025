@@ -45,7 +45,7 @@ const EditorialCoverHero = ({
         <div className={styles.masthead}>
           <div className={styles.issueLine}>commit #1024</div>
           <h1 className={styles.name}>RANEEM MOUSA</h1>
-          <h2 className={styles.portfolio}>COMPUTER ENGINEERING AND MATHEMATICS STUDENT</h2>
+          <h2 className={styles.portfolio}>COMPUTER ENGINEERING · APPLIED AI · ROBOTICS</h2>
         </div>
 
         <div className={styles.portraitContainer}>
@@ -63,13 +63,16 @@ const EditorialCoverHero = ({
 
         <div className={styles.coverLines}>
           <div className={styles.topRight}></div>
-          <div className={styles.midLeft}>AI Enthusiast</div>
+          <div className={styles.midLeft}>Curious about intelligence in motion.</div>
           <div className={styles.bottomRight}>
-          Hey! I’m Raneem, a junior in computer engineering at Washington University in St. Louis with a previous degree in math. I build AI-powered tools as an AI software engineer intern and co-founded Yoink!, an AI-powered rental platform for college students.
+          Hey! I’m Raneem, a computer engineering and AI engineering student at Washington University in St. Louis, with a mathematics degree from Simmons.
+          <br /><br />
+          I build AI tools at WashU’s DI2 Accelerator and work on sensor integration for our robotics team’s autonomous submarine. I’m especially interested in safe autonomous systems and embodied AI.
+          <br /><br />
+          I also co-founded Yoink! and explore computer vision through Fitted, my virtual fitting room project. I love bringing technical ideas into everyday life, from robotics to fashion technology.
+          <br /><br />
+          Always up for a thoughtful conversation or a new collaboration.
 
-I work as a software developer with WashU Robotics and WashU Satellites, focusing on autonomy, embedded systems, and real-world engineering challenges. I’m especially interested in FashionTech at the intersection of AI, computer vision, virtual fitting rooms, sustainability, and product-driven fashion technology.
-
-I’m always excited about new ideas and collaborations, so feel free to reach out.
           </div>
         </div>
         

@@ -38,15 +38,15 @@ const Contact = () => {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Contact</h2>
         <p className={styles.sectionDescription}>
-          Let's connect and discuss how we can work together.
+          Interested in applied AI, robotics, or building something useful together? I’d love to hear from you.
         </p>
         
         <div className={styles.contactContent}>
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <h3 className={styles.contactLabel}>Email</h3>
-              <a href="mailto:raneemousa3@yahoo.com" className={styles.contactValue}>
-                raneemousa3@yahoo.com
+              <a href="mailto:mousa@wustl.edu" className={styles.contactValue}>
+                mousa@wustl.edu
               </a>
             </div>
             
