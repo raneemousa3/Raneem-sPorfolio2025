@@ -65,7 +65,7 @@ const EditorialCoverHero = ({
           <div className={styles.topRight}></div>
           <div className={styles.midLeft}>Curious about intelligence in motion.</div>
           <div className={styles.bottomRight}>
-          Hey! I’m Raneem, a computer engineering and AI engineering student at Washington University in St. Louis, with a mathematics degree from Simmons.
+          Hey! I’m Raneem, a senior studying computer engineering at Washington University in St. Louis, with a mathematics degree from Simmons. After my bachelor’s, I plan to pursue a master’s in AI Engineering.
           <br /><br />
           I build AI tools at WashU’s DI2 Accelerator and work on sensor integration for our robotics team’s autonomous submarine. I’m especially interested in safe autonomous systems and embodied AI.
           <br /><br />
