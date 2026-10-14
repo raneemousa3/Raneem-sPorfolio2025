@@ -65,9 +65,13 @@ const EditorialCoverHero = ({
           <div className={styles.topRight}></div>
           <div className={styles.midLeft}>AI Enthusiast</div>
           <div className={styles.bottomRight}>
-          Hey! I’m Raneem, a computer engineering student at Washington University in St. Louis with a prior degree in mathematics. I build AI-powered and human-centered software. Recently, I’ve been building StillHere, an early disaster-recovery prototype with private household cases, structured needs intake, auditable updates, and transparent financial scenarios.
+          Hey! I’m Raneem, a senior studying computer engineering at Washington University in St. Louis. I also hold a degree in mathematics.
 
-I also co-founded Yoink!, a student rental marketplace, and have contributed to WashU Robotics and WashU Satellites across autonomy and embedded systems. I’m interested in applying AI and computer vision to thoughtful products, from FashionTech to disaster recovery. I’m always glad to connect about new ideas and collaborations.
+I build AI tools at WashU’s DI2 Accelerator and lead sensor integration for our robotics team’s autonomous submarine. I’m especially interested in safe autonomous systems, embodied AI, and building machines that work reliably in the real world.
+
+I also co-founded Yoink!, a campus rental marketplace, and explore the intersection of computer vision and fashion through Fitted, my virtual fitting room project.
+
+Always happy to exchange ideas, talk through a problem, or build something together.
           </div>
         </div>
         
