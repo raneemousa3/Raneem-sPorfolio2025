@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">StillHere disaster recovery prototype</title>
+  <desc id="desc">A calm recovery dashboard with a needs checklist and a fourteen-day financial outlook.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172d3a"/>
+      <stop offset="1" stop-color="#314e55"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d2b991"/>
+      <stop offset="1" stop-color="#9eb8a9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="1010" cy="105" r="175" fill="#ffffff" opacity=".035"/>
+  <circle cx="170" cy="680" r="245" fill="#ffffff" opacity=".025"/>
+  <text x="74" y="92" fill="#d2b991" font-family="Arial,sans-serif" font-size="20" letter-spacing="5">DISASTER RECOVERY</text>
+  <text x="74" y="178" fill="#fffaf1" font-family="Georgia,serif" font-size="76">StillHere</text>
+  <text x="78" y="225" fill="#c8d4ce" font-family="Arial,sans-serif" font-size="22">A steadier next step, when things change.</text>
+  <rect x="74" y="292" width="1052" height="365" rx="24" fill="#f8f6f0"/>
+  <text x="116" y="350" fill="#45605b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">YOUR RECOVERY PLAN</text>
+  <text x="116" y="405" fill="#243a3b" font-family="Georgia,serif" font-size="34">One step at a time</text>
+  <rect x="116" y="438" width="440" height="1" fill="#d9ddd6"/>
+  <circle cx="132" cy="488" r="13" fill="url(#glow)"/>
+  <path d="m126 488 5 5 9-11" fill="none" stroke="#20373b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="162" y="495" fill="#304342" font-family="Arial,sans-serif" font-size="20">Tell us what your household needs</text>
+  <circle cx="132" cy="544" r="13" fill="#e4e8e1"/>
+  <text x="162" y="551" fill="#304342" font-family="Arial,sans-serif" font-size="20">Review available next steps</text>
+  <rect x="620" y="375" width="1" height="230" fill="#d9ddd6"/>
+  <text x="668" y="417" fill="#45605b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">14-DAY OUTLOOK</text>
+  <text x="668" y="466" fill="#243a3b" font-family="Georgia,serif" font-size="29">Plan with clear assumptions</text>
+  <rect x="668" y="498" width="390" height="10" rx="5" fill="#e5e8e2"/>
+  <rect x="668" y="498" width="260" height="10" rx="5" fill="url(#glow)"/>
+  <text x="668" y="550" fill="#687976" font-family="Arial,sans-serif" font-size="16">Compare recovery scenarios</text>
+  <text x="74" y="704" fill="#dce4dc" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">EARLY PROTOTYPE · SYNTHETIC DEMO DATA</text>
+</svg>
