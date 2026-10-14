@@ -48,7 +48,7 @@ const Projects = () => {
 
       id: 2,
       title: 'Yoink!',
-      description:  'Co-founded Yoink! - A cross-platform rental marketplace for university students to share textbooks, electronics, and everyday items within their campus. Built with a production-grade Flutter architecture, Yoink supports secure payments, real-time booking, gamification, and sustainability impact tracking across users and campuses.',
+      description: 'Co-founded Yoink! with my team at a hackathon, where we won first place. We later applied for grants and qualified for the finals of SVC competitions. Yoink! is a cross-platform rental marketplace for university students to share textbooks, electronics, and everyday items on campus. Built with a production-grade Flutter architecture, it supports secure payments, real-time booking, gamification, and sustainability impact tracking across users and campuses.',
       image: '/images/Yoink.jpg',
       tags: ['Firebase', 'Flutter','Stripe Payments', 'Gamification', 'Sustainability'],
       link: 'https://yoink.green/',
