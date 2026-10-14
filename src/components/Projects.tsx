@@ -30,7 +30,7 @@ const Projects = () => {
     {
       id: 10,
       title: 'StillHere — Disaster Recovery Companion',
-      description: 'An early disaster-recovery prototype for organizing household needs and next steps. The Python and SQLite case service provides authenticated sessions, typed disaster intake, auditable updates, and an HTTP API; the browser demo uses a mock service and synthetic data for transparent 14-day financial scenarios. The project includes dependency graph planning with the Strands Agents SDK and Amazon Bedrock, with application hosting on Akamai Cloud.',
+      description: 'Built with a teammate during a hackathon, StillHere is an early disaster-recovery prototype for organizing household needs and next steps. The Python and SQLite case service provides authenticated sessions, typed disaster intake, auditable updates, and an HTTP API; the browser demo uses a mock service and synthetic data for transparent 14-day financial scenarios. The project includes dependency graph planning with the Strands Agents SDK and Amazon Bedrock, with application hosting on Akamai Cloud.',
       image: '/images/stillhere.svg',
       tags: ['Python', 'SQLite', 'HTTP API', 'JavaScript', 'Financial Planning', 'Strands + Amazon Bedrock', 'Dependency Graph', 'Akamai Cloud Hosting'],
       link: 'https://github.com/ahmad8743/StillHere'
