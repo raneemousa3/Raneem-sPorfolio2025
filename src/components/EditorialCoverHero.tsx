@@ -65,13 +65,10 @@ const EditorialCoverHero = ({
           <div className={styles.topRight}></div>
           <div className={styles.midLeft}>AI Enthusiast</div>
           <div className={styles.bottomRight}>
-          Hey! I’m Raneem, a senior studying computer engineering at Washington University in St. Louis. I also hold a degree in mathematics.
-
-I build AI tools at WashU’s DI2 Accelerator and lead sensor integration for our robotics team’s autonomous submarine. I’m especially interested in safe autonomous systems, embodied AI, and building machines that work reliably in the real world.
-
-I also co-founded Yoink!, a campus rental marketplace, and explore the intersection of computer vision and fashion through Fitted, my virtual fitting room project.
-
-Always happy to exchange ideas, talk through a problem, or build something together.
+          <p>Hey! I’m Raneem, a senior studying computer engineering at Washington University in St. Louis. I also hold a degree in mathematics.</p>
+          <p>I build AI tools at WashU’s DI2 Accelerator and lead sensor integration for our robotics team’s autonomous submarine.</p>
+          <p>I’m especially interested in safe autonomous systems, embodied AI, and building machines that work reliably in the real world. I also co-founded Yoink!, a campus rental marketplace, and explore the intersection of computer vision and fashion through Fitted, my virtual fitting room project.</p>
+          <p>Always happy to exchange ideas, talk through a problem, or build something together.</p>
           </div>
         </div>
         
