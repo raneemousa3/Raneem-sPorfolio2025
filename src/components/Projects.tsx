@@ -28,6 +28,14 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 10,
+      title: 'StillHere — Disaster Recovery Companion',
+      description: 'An early disaster-recovery prototype for organizing household needs and next steps. Built a Python and SQLite case service with authenticated sessions, typed disaster intake, and auditable updates, plus a browser demo with a mock service and transparent 14-day financial scenarios using synthetic data.',
+      image: '/images/stillhere.svg',
+      tags: ['Python', 'SQLite', 'JavaScript', 'Disaster Recovery', 'Financial Planning'],
+      link: 'https://github.com/ahmad8743/StillHere'
+    },
+    {
       id: 1,
       title: 'Virtual Fitting Room',
       description: 'An AI-powered virtual fitting room that allows users to try on clothes virtually. Built with computer vision and machine learning to provide a realistic and interactive shopping experience. Features include real-time body measurements, clothing visualization, and personalized recommendations.',
